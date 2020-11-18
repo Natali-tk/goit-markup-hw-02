@@ -1,0 +1,88 @@
+/* цвет основного текста  #212121*/
+/* вторичный цвет #757575 */
+/* белый цвет #FFFFFF */
+/* акцент  #2196F3 */
+/* цвет ссылок rgba(255, 255, 255, 0.6) */
+/* первичный цвет фона #E5E5E5 */
+/* вторичный цвет фона #F5F4FA */
+/* цвет фона банера #2F303A */
+:root{
+    --primary-bg-color:#E5E5E5;
+    --primary-text-color:#757575;
+    --title-text-color:#000000;
+    --accent-color:#2196F3;
+    --primary-white-color: #FFFFFF;
+    --secondary-bg-color:#F5F4FA;
+    --first-bg-corol:#2F303A;
+
+}
+
+body{
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+}
+ul{
+    list-style: none;
+}
+/* Logo */
+.logo{
+    color: var(--title-text-color);
+}
+.logo-start{
+    color: var(--accent-color);
+}
+/* Секция навигации */
+.site-nav .link{
+    color:var(--title-text-color);
+}
+.site-nav .link-current{
+    color: var(--accent-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+.mail{
+    color: var(--accent-color);   
+}
+.tel{
+    color: var(--primary-text-color); 
+}
+/* Секция герой */
+.hero{
+    background-color: var(--first-bg-corol);
+}
+.hero-title{
+    color: var( --primary-white-color);
+}
+/* Секции */
+.section-title{
+    color: var(--title-text-color);
+}
+/* Секция особенностей */
+
+.feature-list .title{
+    color: var(--title-text-color);   
+}
+/* Секция  Наша команда */
+.participant-list .title{
+    color: var(--title-text-color);   
+}
+/* Footer */
+footer{
+    background-color: var(--first-bg-corol);
+}
+.logo-footer{
+    color:var( --primary-white-color);
+}
+
+.adress .mail,
+.adrees .tel{
+    color: rgba(255, 255, 255, 0.6);
+}
+.button{
+    color: var( --primary-white-color);
+    background-color:var(--accent-color);
+    display: inline-block;
+    border: none;
+}
