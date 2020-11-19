@@ -1,4 +1,4 @@
-/* цвет основного текста  #212121*/
+/* цвет заголовок текста  #212121*/
 /* вторичный цвет #757575 */
 /* белый цвет #FFFFFF */
 /* акцент  #2196F3 */
@@ -9,11 +9,12 @@
 :root{
     --primary-bg-color:#E5E5E5;
     --primary-text-color:#757575;
-    --title-text-color:#000000;
-    --accent-color:#2196F3;
+    --title-text-color: #212121;
+    --accent-btn-color:#2196F3;
     --primary-white-color: #FFFFFF;
     --secondary-bg-color:#F5F4FA;
-    --first-bg-corol:#2F303A;
+    --first-bg-color:#2F303A;
+    --logo-color:#000000;
 
 }
 
@@ -24,39 +25,44 @@ body{
 ul{
     list-style: none;
 }
+
 /* Logo */
 .logo{
-    color: var(--title-text-color);
+    color: var(--logo-color);
 }
 .logo-start{
-    color: var(--accent-color);
+    color: var(--accent-btn-color);
 }
 /* Секция навигации */
 .site-nav .link{
-    color:var(--title-text-color);
+    color: var(--title-text-color);
 }
 .site-nav .link-current{
-    color: var(--accent-color);
+    color: var(--accent-btn-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: var(--accent-color);
+    color:var(--accent-btn-color);
 }
-.mail{
-    color: var(--accent-color);   
+
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+    color: var(--accent-btn-color);
 }
-.tel{
+
+.contact-nav .link {
     color: var(--primary-text-color); 
 }
+
 /* Секция герой */
 .hero{
-    background-color: var(--first-bg-corol);
+    background-color: var(--first-bg-color);
 }
 .hero-title{
-    color: var( --primary-white-color);
+    color: var(--primary-white-color);
 }
 /* Секции */
-.section-title{
+.section-title {
     color: var(--title-text-color);
 }
 /* Секция особенностей */
@@ -70,19 +76,52 @@ ul{
 }
 /* Footer */
 footer{
-    background-color: var(--first-bg-corol);
+    background-color: var(--first-bg-color);
 }
 .logo-footer{
-    color:var( --primary-white-color);
+    color: var(--primary-white-color);
 }
-
-.adress .mail,
-.adrees .tel{
+.footer .adress {
+    color: var(--primary-white-color);
+}
+.footer .mail,
+.footer .tel{
     color: rgba(255, 255, 255, 0.6);
 }
 .button{
-    color: var( --primary-white-color);
-    background-color:var(--accent-color);
-    display: inline-block;
-    border: none;
+    color: var(--primary-white-color);
+    background-color: var(--accent-btn-color);
+    border: transparent;
+}
+.button:hover {
+    color: var(--title-text-color);
+    background-color: var(--secondary-bg-color);
+}
+
+/* Страничка портфолио */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+.button-list .button-works {
+ color: var(--title-text-color);
+ background-color: var(--secondary-bg-color);
+}
+
+.button-list .button-works:hover,
+.button-list .button-works:focus {
+    color: var(--primary-white-color);
+    background-color: #2196F3; 
+}
+.works-title{
+    color: var(--title-text-color);
 }
