@@ -21,20 +21,43 @@
 body{
     color: var(--primary-text-color);
     background-color: var(--primary-white-color);
+    
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 ul{
     list-style: none;
 }
-
+a{
+    text-decoration: none;
+}
 /* Logo */
+.logo,
+.logo-footer{
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
 .logo{
-    color: var(--logo-color);
+    color: var(--logo-color);  
 }
 .logo-start{
     color: var(--accent-btn-color);
 }
 /* Секция навигации */
-.site-nav .link{
+.site-nav .link,
+.contact-nav .link,
+.site-nav .link-current {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em
+}
+.site-nav .link {
     color: var(--title-text-color);
 }
 .site-nav .link-current{
@@ -45,34 +68,53 @@ ul{
     color:var(--accent-btn-color);
 }
 
+.contact-nav  .link{
+    color: var(--primary-text-color);  
+}
+
 .contact-nav .link:hover,
 .contact-nav .link:focus {
     color: var(--accent-btn-color);
 }
-
-.contact-nav .link {
-    color: var(--primary-text-color); 
-}
-
 /* Секция герой */
 .hero{
     background-color: var(--first-bg-color);
 }
 .hero-title{
     color: var(--primary-white-color);
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 /* Секции */
 .section-title {
     color: var(--title-text-color);
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 /* Секция особенностей */
 
 .feature-list .title{
-    color: var(--title-text-color);   
+    color: var(--title-text-color); 
+   
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase; 
 }
 /* Секция  Наша команда */
 .participant-list .title{
-    color: var(--title-text-color);   
+    color: var(--title-text-color);  
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19; 
 }
 /* Footer */
 footer{
@@ -91,6 +133,11 @@ footer{
 .button{
     color: var(--primary-white-color);
     background-color: var(--accent-btn-color);
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
     border: transparent;
 }
 .button:hover {
@@ -111,10 +158,15 @@ footer{
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 .button-list .button-works {
- color: var(--title-text-color);
- background-color: var(--secondary-bg-color);
+   color: var(--title-text-color);
+   background-color: var(--secondary-bg-color);
+   
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.62;
+   text-align: center;
 }
 
 .button-list .button-works:hover,
@@ -124,4 +176,12 @@ footer{
 }
 .works-title{
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
+.works-type{
+    font-size: 16px;
+    line-height: 1.88;
+}           
