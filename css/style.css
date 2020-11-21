@@ -128,7 +128,10 @@ footer{
 .footer-tel{
     color: rgba(255, 255, 255, 0.6);
 }
-
+address {
+    display: block;
+    font-style: normal;
+    }
 .footer a:hover,
 .footer a:focus {
     color:var(--accent-btn-color);   
@@ -186,6 +189,7 @@ footer{
     letter-spacing: 0.06em;
 }
 .works-type{
+    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
 }           
