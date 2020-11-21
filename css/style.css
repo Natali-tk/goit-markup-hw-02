@@ -121,17 +121,19 @@ footer{
 .logo-footer{
     color: var(--primary-white-color);
 }
-.footer .adress {
+.footer-adress {
     color: var(--primary-white-color);
 }
-.footer .mail,
-.footer .tel{
+.footer-mail,
+.footer-tel{
     color: rgba(255, 255, 255, 0.6);
 }
+
 .footer a:hover,
 .footer a:focus {
     color:var(--accent-btn-color);   
 }
+
 .button{
     color: var(--primary-white-color);
     background-color: var(--accent-btn-color);
